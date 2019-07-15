@@ -1,7 +1,7 @@
-let array = [6, 3, 21, 89, 10, 32, 9]
+let array = [6, 3, 21, 89, 10, 90, 32, 9]
 
 function largest() {
-    largest_num = 0
+    largest_num = array[0]
     for (let index = 0; index < array.length; index++) {
         if (largest_num < array[index]) {
             largest_num = array[index]

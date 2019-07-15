@@ -7,7 +7,7 @@ function largest() {
             largest_num = array[index]
         }
     }
-    console.log(largest_num)
+    console.log(`The largest number in the array is ${largest_num}!`)
 }
 
 largest()

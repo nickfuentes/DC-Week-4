@@ -1,0 +1,42 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+}
+
+.pendingTasksTitle {
+    margin-left: 20px;
+}
+
+#todoTextBox {
+    background-color: lightblue;
+}
+
+button {
+    background-color: lightcoral;
+}
+
+#pendingTasks {
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasksDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.linkStyle {
+    color: white;;
+}
+

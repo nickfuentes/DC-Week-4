@@ -9,15 +9,22 @@ let dessertButton = document.getElementById("fullDessertsButton")
 // adds full list of menu on page
 let dishesDiv = dishes.map(dish => {
 
-    // template literal going into div
     let dishDiv =
-        `<div>
-        <img src="${dish.imageURL}" />
-        <h2>${dish.title}</h2>
-        <p>${dish.description}</p>
-        <p>${dish.price}</p>
+
+        `<div class="courseDiv">
+        <div class="courseImg">
+            <img src="${dish.imageURL}" />
+        </div>
+        <div class="courseTitleDescrip">
+            <h2>${dish.title}</h2>
+            <p>${dish.description}</p>
+        </div>
+        <div class="coursePrice">
+            <p>${dish.price}</p>
+        </div>
     </div>`
     return dishDiv
+
 })
 
 dishesListDiv.innerHTML = dishesDiv.join("")
@@ -38,14 +45,21 @@ starterButton.addEventListener("click", function () {
     // map through all the starters
     let starters = filteredStarters.map(dish => {
 
+        let dishDiv =
 
-        return `<div>
-            <img src="${dish.imageURL}" />
-            <h2>${dish.title}</h2>
-            <p>${dish.description}</p>
-            <p>${dish.price}</p>
-            </div>
-             `
+            `<div class="courseDiv">
+                <div class="courseImg">
+                    <img src="${dish.imageURL}" />
+                </div>
+                <div class="courseTitleDescrip">
+                    <h2>${dish.title}</h2>
+                    <p>${dish.description}</p>
+                </div>
+                <div class="coursePrice">
+                    <p>${dish.price}</p>
+                </div>
+            </div>`
+        return dishDiv
 
     })
     // enters the template litereal into the html
@@ -62,14 +76,20 @@ entreeButton.addEventListener("click", function () {
     // map through all the starters
     let entrees = filteredEntrees.map(dish => {
 
-        // template literal going into div
         let dishDiv =
-            `<div>
-            <img src="${dish.imageURL}" />
-            <h2>${dish.title}</h2>
-            <p>${dish.description}</p>
-            <p>${dish.price}</p>
-            </div>`
+
+            `<div class="courseDiv">
+            <div class="courseImg">
+                <img src="${dish.imageURL}" />
+            </div>
+            <div class="courseTitleDescrip">
+                <h2>${dish.title}</h2>
+                <p>${dish.description}</p>
+            </div>
+            <div class="coursePrice">
+                <p>${dish.price}</p>
+            </div>
+        </div>`
         return dishDiv
 
     })
@@ -84,15 +104,23 @@ dessertButton.addEventListener("click", function () {
     })
 
     let desserts = filteredDesserts.map(dish => {
-        // template literal going into div
+
         let dishDiv =
-            `<div>
-            <img src="${dish.imageURL}" />
-            <h2>${dish.title}</h2>
-            <p>${dish.description}</p>
-            <p>${dish.price}</p>
+
+            `<div class="courseDiv">
+                <div class="courseImg">
+                    <img src="${dish.imageURL}" />
+                </div>
+                <div class="courseTitleDescrip">
+                    <h2>${dish.title}</h2>
+                    <p>${dish.description}</p>
+                </div>
+                <div class="coursePrice">
+                    <p>${dish.price}</p>
+                </div>
             </div>`
         return dishDiv
+
     })
     dishesListDiv.innerHTML = desserts.join("")
 

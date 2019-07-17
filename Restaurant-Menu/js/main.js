@@ -75,3 +75,25 @@ entreeButton.addEventListener("click", function () {
     })
     dishesListDiv.innerHTML = entrees.join("")
 })
+
+
+dessertButton.addEventListener("click", function () {
+
+    let filteredDesserts = dishes.filter(function (desserts) {
+        return desserts.course === "Desserts"
+    })
+
+    let desserts = filteredDesserts.map(dish => {
+        // template literal going into div
+        let dishDiv =
+            `<div>
+            <img src="${dish.imageURL}" />
+            <h2>${dish.title}</h2>
+            <p>${dish.description}</p>
+            <p>${dish.price}</p>
+            </div>`
+        return dishDiv
+    })
+    dishesListDiv.innerHTML = desserts.join("")
+
+})

@@ -13,20 +13,24 @@
 <body>
 
     <div id="container">
+        <h1 id="mainTitle">ToDo List</h1>
 
         <div id="header">
-            <p>Enter Task: </p>
-            <input type="text" id="todoTextBox" placeholder="Enter A TODO" />
+            <p id="headerTitle">Enter Task: </p>
+            <input type="text" id="todoTextBox" placeholder="Complete This Assignment" />
             <button id="addButton">Add</button>
         </div>
 
-        <div id="pendingTasks">
-            <h1 class="pendingTasksTitle">Pending Tasks:</h1>
+        <div id="mainTasks">
+            <div id="pendingTasks">
+                <h1 class="tasksTitle">Pending Tasks:</h1>
+            </div>
+
+            <div id="completedTasks">
+                <h1 class="tasksTitle">Completed Tasks:</h1>
+            </div>
         </div>
 
-        <div id="completedTasks">
-            <h1 class="completedTasksTitle">Completed Tasks:</h1>
-        </div>
 
     </div>
 

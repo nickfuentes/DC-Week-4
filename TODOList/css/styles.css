@@ -1,44 +1,89 @@
+* {
+    font-family: sans-serif;
+}
+
 #container {
     display: flex;
     flex-direction: column;
-    margin: 0 30px 0 30px;
+    margin: 40px 200px 40px 200px;
+    background-color: white;
+}
+
+#mainTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #45b3e7;
+    color: white;
+    height: 100px;
+    font-size: 50px;
 }
 
 #header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 30px 10px 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
 }
 
-.pendingTasksTitle {
-    margin-left: 20px;
+#headerTitle {
+    font-size: 20px;
 }
 
 #todoTextBox {
-    background-color: lightblue;
+    border: 2px solid grey;
+    width: 300px;
+    height: 25px;
 }
 
 button {
-    background-color: lightcoral;
+    background-color: #45b3e7;
+    color: white;
+    font-size: 20px;
+    width: 90px;
+    height: 35px;
 }
 
-#pendingTasks {
-    background-color: lightseagreen;
+#mainTasks {
     display: flex;
     flex-direction: column;
+    margin: 0 0 40px 0;
+}
+
+.tasksTitle {
+    text-align: center;
 }
 
 .tasksDiv {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
+    background-color: #45b3e7; 
+    color: white;
+    margin: 0 40px 0 40px;
+}
+
+.checkbox {
+    height: 30px;
+    width: 30px;
+    border: 10px solid white;
+    background-color: #45b3e7;
+   
+}
+
+.tasksParagraph {
+   width: 400px;
 }
 
 .link {
-    color: white;
     width: 100px;
-    height: 25px;
+    color: lightgrey;
+    padding: 10px;
+}
+
+#completedTasks div {
+    background-color: red; 
 }
 

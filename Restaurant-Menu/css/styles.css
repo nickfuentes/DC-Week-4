@@ -1,0 +1,17 @@
+#buttonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+#dishesListDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#dishesListDiv div {
+    display: flex;
+    flex-direction: row;
+}
+

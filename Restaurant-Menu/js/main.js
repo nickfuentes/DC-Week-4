@@ -1,4 +1,5 @@
 let dishesListDiv = document.getElementById("dishesListDiv")
+let courseTitle = document.getElementById("courseTitle")
 
 // buttons
 let fullButton = document.getElementById("fullMenuButton")
@@ -27,15 +28,20 @@ let dishesDiv = dishes.map(dish => {
 
 })
 
+let fullMenuTitle = `<h1>Full Menu</h1>`
+
+courseTitle.innerHTML = fullMenuTitle
 dishesListDiv.innerHTML = dishesDiv.join("")
 
-// (Full Button) enters the template litereal of all courses into the html
+// (Full Button) 
 fullButton.addEventListener("click", function () {
+    let fullMenuTitle = `<h1>Full Menu</h1>`
+
+    courseTitle.innerHTML = fullMenuTitle
     dishesListDiv.innerHTML = dishesDiv.join("")
 })
 
-
-// (Starter Button)event listner for starters filters the starters
+// (Starter Button)
 starterButton.addEventListener("click", function () {
 
     let filteredStarters = dishes.filter(function (starters) {
@@ -62,11 +68,15 @@ starterButton.addEventListener("click", function () {
         return dishDiv
 
     })
+    let fullMenuTitle = `<h1>Starters</h1>`
+
+    courseTitle.innerHTML = fullMenuTitle
     // enters the template litereal into the html
     dishesListDiv.innerHTML = starters.join("")
 
 })
 
+// (Entree Button)
 entreeButton.addEventListener("click", function () {
 
     let filteredEntrees = dishes.filter(function (entrees) {
@@ -93,10 +103,13 @@ entreeButton.addEventListener("click", function () {
         return dishDiv
 
     })
+    let fullMenuTitle = `<h1>Entrees</h1>`
+
+    courseTitle.innerHTML = fullMenuTitle
     dishesListDiv.innerHTML = entrees.join("")
 })
 
-
+// (Dessert Button)
 dessertButton.addEventListener("click", function () {
 
     let filteredDesserts = dishes.filter(function (desserts) {
@@ -122,6 +135,9 @@ dessertButton.addEventListener("click", function () {
         return dishDiv
 
     })
+    let fullMenuTitle = `<h1>Desserts</h1>`
+
+    courseTitle.innerHTML = fullMenuTitle
     dishesListDiv.innerHTML = desserts.join("")
 
 })

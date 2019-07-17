@@ -1,17 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+button {
+    background-color: lightcoral; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+img {
+    width: 300px;
+}
+
 #buttonDiv {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px;
+    height: 75px;
+    background-color:lightcoral;
+    margin-bottom: 20px;
 }
 
 #dishesListDiv {
     display: flex;
     flex-direction: column;
+    font-size: 25px;
 }
 
-#dishesListDiv div {
+.courseDiv {
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.courseImg {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+}
+
+.courseTitleDescrip {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.courseTitleDescrip h2 {
+    margin: 20px 0 20px 0;
+} 
+
+.courseTitleDescrip p {
+
+} 
+
+.coursePrice {
+    display: flex;
+    flex-direction: column;
+}

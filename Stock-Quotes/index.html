@@ -6,18 +6,21 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <h1>Check Your Stock</h1>
+    <h1 id="title">Check Your Stock</h1>
 
-    <input id="textSymbolBox" type="text" placeholder="Enter Your Stock Here"></input>
+    <div id="inputArea">
+        <input id="textSymbolBox" type="text" placeholder="Enter Your Stock Here"></input>
 
-    <button id="searchButton">Show Quotes</button>
+        <button id="searchButton">Show Quotes</button>
+    </div>
 
-    <div id="mainDiv"></div>
+    <div id="mainDiv">
+    </div>
 
     <script src="js/stockQuotes.js" async defer></script>
     <script src="js/main.js" async defer></script>

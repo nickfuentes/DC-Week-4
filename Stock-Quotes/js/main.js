@@ -18,9 +18,9 @@ searchButton.addEventListener("click", function () {
 
         let insertQuote =
             `
-                            <div>
-                                <p>${chosenQuote.name}</p>
-                                <p>${chosenQuote.price}</p>
+                            <div class="namePrice">
+                                <p>Name: ${chosenQuote.name}</p>
+                                <p>Price: ${chosenQuote.price}</p>
                             </di>
                             `
         quoteListDiv.innerHTML = insertQuote

@@ -1,0 +1,13 @@
+#title {
+    text-align: center;
+}
+
+#inputArea {
+    display: flex;
+    justify-content: space-around;
+}
+
+.namePrice {
+    display: flex;
+    justify-content: space-around;
+}

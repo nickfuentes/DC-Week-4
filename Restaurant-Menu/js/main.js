@@ -13,17 +13,17 @@ let dishesDiv = dishes.map(dish => {
     let dishDiv =
 
         `<div class="courseDiv">
-        <div class="courseImg">
-            <img src="${dish.imageURL}" />
-        </div>
-        <div class="courseTitleDescrip">
-            <h2>${dish.title}</h2>
-            <p>${dish.description}</p>
-        </div>
-        <div class="coursePrice">
-            <p>${dish.price}</p>
-        </div>
-    </div>`
+            <div class="courseImg">
+                <img src="${dish.imageURL}" />
+            </div>
+            <div class="courseTitleDescrip">
+                <h2>${dish.title}</h2>
+                <p>${dish.description}</p>
+            </div>
+            <div class="coursePrice">
+                <p>${dish.price}</p>
+            </div>
+        </div>`
     return dishDiv
 
 })

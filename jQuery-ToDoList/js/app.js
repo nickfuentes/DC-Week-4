@@ -16,6 +16,13 @@ $(document).ready(function () {
         // creates checkbox
         let checkbox = $("<input/>").attr({ type: "checkbox" })
         checkbox.addClass("checkbox")
+        checkbox.click(function () {
+            if (this.checked) {
+                completedTodosDiv.append(this.parentElement)
+            } else {
+                pendingTodosDiv.append(this.parentElement)
+            }
+        })
         // creat a h3
         let todoTitle = $("<h3>")
         todoTitle.html(todo)

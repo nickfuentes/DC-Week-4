@@ -29,6 +29,11 @@ $(document).ready(function () {
         // creates a tag
         let remove = $("<a>")
         remove.html("Remove")
+        remove.click(function () {
+            if (this.parentElement) {
+                this.parentElement.remove()
+            }
+        })
 
         // append checkbox into todoDiv
         pendingTodoList.append(checkbox)
